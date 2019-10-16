@@ -4,6 +4,14 @@
 
 # Cloud storage
 
+# Cloud sql
+
+* For transactional queries
+
+# Cloud dataflow
+
+* Cloud Dataflow is a fully managed service for creating data processing pipelines. 
+
 # Cloud Memorystore
 
 Cloud Memorystore is an in-memory cache service. Other databases offered in GCP
