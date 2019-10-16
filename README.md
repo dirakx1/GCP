@@ -4,6 +4,8 @@
 
 # Cloud storage
 
+* For storage large amounts of data
+
 # Cloud sql
 
 * For transactional queries
