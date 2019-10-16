@@ -2,6 +2,8 @@
 
 * For time series data. 
 
+# Cloud storage
+
 # Cloud Memorystore
 
 Cloud Memorystore is an in-memory cache service. Other databases offered in GCP
