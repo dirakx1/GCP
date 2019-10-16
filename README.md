@@ -1,3 +1,7 @@
+# Cloud Bigtable
+
+* For time series data. 
+
 # Cloud Memorystore
 
 Cloud Memorystore is an in-memory cache service. Other databases offered in GCP
