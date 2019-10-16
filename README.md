@@ -36,7 +36,7 @@ Cloud Firebase includes a Datastore mode, which enables applications written for
 Datastore to work with Cloud Firebase as well. When running in Native mode, Cloud
 Firestore provides real-time data synchronization and offline support.
 
-# Kubernetes notes specificaly to GKE 
+# Kubernetes notes specific to GKE 
 
 * for microservices, containerized applications
 * kubectl get deployments
