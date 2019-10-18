@@ -6,26 +6,25 @@
 
 * For storage large amounts of data clases of archival ate nearline and coldline
 
-# Cloud sql
+# Cloud SQL
 
 * For transactional queries
 
-# Cloud datastore
+# Cloud Datastore
 
 * Document DB, horizontally scalable
 
-# Cloud spanner 
+# Cloud Spanner 
 
 + Horizontally scalabel relational db
 
-# Cloud dataflow
+# Cloud Dataflow
 
 * Cloud Dataflow is a fully managed service for creating data processing pipelines. 
 
-# Cloud dataproc 
+# Cloud Dataproc 
 
 * Managed Spark and Hadoop
-
 
 
 # Cloud Memorystore
