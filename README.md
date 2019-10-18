@@ -1,18 +1,32 @@
 # Cloud Bigtable
 
-* For time series data. 
+* For time series data.(non relational) 
 
 # Cloud storage
 
-* For storage large amounts of data
+* For storage large amounts of data clases of archival ate nearline and coldline
 
 # Cloud sql
 
 * For transactional queries
 
+# Cloud datastore
+
+* Document DB, horizontally scalable
+
+# Cloud spanner 
+
++ Horizontally scalabel relational db
+
 # Cloud dataflow
 
 * Cloud Dataflow is a fully managed service for creating data processing pipelines. 
+
+# Cloud dataproc 
+
+* Managed Spark and Hadoop
+
+
 
 # Cloud Memorystore
 
@@ -34,7 +48,7 @@ example, applications on mobile devices can be updated in real time as data in t
 end changes.
 Cloud Firebase includes a Datastore mode, which enables applications written for
 Datastore to work with Cloud Firebase as well. When running in Native mode, Cloud
-Firestore provides real-time data synchronization and offline support.
+Firestore provides real-time data synchronization and offline support. (Serverless) 
 
 # Kubernetes notes specific to GKE 
 
@@ -48,6 +62,13 @@ Firestore provides real-time data synchronization and offline support.
 * canary deployments
 * blue-green deployments
 
+ 
+ # Networking
+ 
+ ## Google Cloud service mesh 
+ ## Cloud armor 
+ * DDOS protection and WAF 
+ ## 
  
  
 
