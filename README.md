@@ -70,6 +70,8 @@ Firestore provides real-time data synchronization and offline support. (Serverle
  * DDOS protection and WAF 
  ## 
  
+ # Cloud iot core 
+ 
  
 
 
