@@ -4,7 +4,7 @@
 
 # Cloud storage
 
-* For storage large amounts of data clases of archival ate nearline and coldline
+* For storage large amounts of data clases of archival are nearline (constnt retrieval) and coldline (seldom retireval of data)
 
 # Cloud SQL
 
@@ -12,11 +12,11 @@
 
 # Cloud Datastore
 
-* Document DB, horizontally scalable
+* Document DB (Nosql), horizontally scalable
 
 # Cloud Spanner 
 
-+ Horizontally scalabel relational db
+* Horizontally scalable relational db
 
 # Cloud Dataflow
 
@@ -29,7 +29,7 @@
 
 # Cloud Memorystore
 
-Cloud Memorystore is an in-memory cache service. Other databases offered in GCP
+Cloud Memorystore (redis management) is an in-memory cache service. Other databases offered in GCP
 are designed to store large volumes of data and support complex queries, but Cloud
 Memorystore is a managed Redis service for caching frequently used data in memory.
 Caches like this are used to reduce the time needed to read data into an application. Cloud
