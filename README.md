@@ -52,6 +52,7 @@ Firestore provides real-time data synchronization and offline support. (Serverle
 # Kubernetes notes specific to GKE 
 
 * for microservices, containerized applications
+* create clusters and set zones. 
 * kubectl get deployments
 * kubectl get replicasets
 * kubectl get pods
