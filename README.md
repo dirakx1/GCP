@@ -68,6 +68,9 @@ Firestore provides real-time data synchronization and offline support. (Serverle
 * canary deployments
 * blue-green deployments
 
+# GCE
+
+* Imagenes, snapshots: https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  
  # Networking
  
