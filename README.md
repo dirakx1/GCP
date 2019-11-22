@@ -68,6 +68,10 @@ Firestore provides real-time data synchronization and offline support. (Serverle
 * canary deployments
 * blue-green deployments
 
+# Cloud functions
+
+Google Cloud Functions is a serverless execution environment for building and connecting cloud services. With Cloud Functions you write simple, single-purpose functions that are attached to events emitted from your cloud infrastructure and services. Your function is triggered when an event being watched is fired. Your code executes in a fully managed environment. There is no need to provision any infrastructure or worry about managing any server
+
 # GCE
 
 * Imagenes, snapshots: 
