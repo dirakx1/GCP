@@ -1,3 +1,9 @@
+# Cloud Bigquery
+
+Bigdata, 
+
+* Best practice: Configure the default table expiration for your datasets, configure the expiration time for your tables, and configure the partition expiration for partitioned tables.
+
 # Cloud Bigtable
 
 * For time series data.(non relational) 
