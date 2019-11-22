@@ -81,8 +81,11 @@ https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  # Networking
  
  ## Google Cloud service mesh 
+ 
  ## Cloud armor 
- * DDOS protection and WAF 
+ * DDOS protection and WAF
+ * itigate owasp risks 
+ 
  ## 
  
  ## Cloud run
