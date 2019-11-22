@@ -86,7 +86,12 @@ https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  * DDOS protection and WAF
  * itigate owasp risks 
  
- ## 
+ ## PCI compliant
+ 
+ * https://cloud.google.com/security/compliance/pci-dss/
+ 
+ # GDPR
+* The General Data Protection Regulation 2016/679 is a regulation in EU law on data protection and privacy for all individual citizens of the European Union and the European Economic Area. It also addresses the transfer of personal data outside the EU and EEA areas.
  
  ## Cloud run
  
