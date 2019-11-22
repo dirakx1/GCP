@@ -7,6 +7,7 @@ Bigdata,
 # Cloud Bigtable
 
 * For time series data.(non relational) 
+* Best practices: https://cloud.google.com/bigtable/docs/schema-design-time-series
 
 # Cloud storage
 
