@@ -10,7 +10,7 @@ Bigdata,
 
 # Cloud storage
 
-* For storage large amounts of data clases of archival are nearline (constnt retrieval) and coldline (seldom retireval of data)
+* For storage large amounts of data clases of archival are nearline (constant retrieval) and coldline (seldom retireval of data)
 
 # Cloud SQL
 
