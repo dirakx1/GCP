@@ -98,6 +98,9 @@ https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  
  # Cloud iot core 
  
+ # Cloud directory sync
+ Migration service form LDAP
+ * https://support.google.com/a/answer/106368?hl=en
  
 
 
