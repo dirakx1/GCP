@@ -70,7 +70,9 @@ Firestore provides real-time data synchronization and offline support. (Serverle
 
 # GCE
 
-* Imagenes, snapshots: https://cloud.google.com/compute/docs/images/sharing-images-across-projects
+* Imagenes, snapshots: 
+https://cloud.google.com/compute/docs/images/sharing-images-across-projects
+* gcloud compute instances create test-instance --image database-image-a --image-project database-images 
  
  # Networking
  
