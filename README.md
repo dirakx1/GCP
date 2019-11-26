@@ -20,6 +20,7 @@ Bigdata,
 # Cloud Datastore
 
 * Document DB (Nosql), horizontally scalable
+* Futrue would be firestore.
 
 # Cloud Spanner 
 
@@ -33,6 +34,7 @@ Bigdata,
 
 * Managed Spark and Hadoop
 
+# Cloud Datalab
 
 # Cloud Memorystore
 
