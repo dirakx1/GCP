@@ -79,6 +79,10 @@ Google Cloud Functions is a serverless execution environment for building and co
 https://cloud.google.com/compute/docs/images/sharing-images-across-projects
 * gcloud compute instances create test-instance --image database-image-a --image-project database-images 
  
+# GCS (Google cloud storage) 
+* Transfer appliance (>20TB) 
+
+
  # Networking
  
  ## Google Cloud service mesh 
