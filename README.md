@@ -35,6 +35,7 @@ Bigdata,
 * Managed Spark and Hadoop
 
 # Cloud Datalab
+Cloud Datalab is a powerful interactive tool created to explore, analyze, transform, and visualize data and build machine learning models on Google Cloud Platform. It runs on Compute Engine and connects to multiple cloud services easily so you can focus on your data science tasks.
 
 # Cloud Memorystore
 
