@@ -29,6 +29,7 @@ Bigdata,
 # Cloud Dataflow
 
 * Cloud Dataflow is a fully managed service for creating data processing pipelines. 
+* similar to apache beam 
 
 # Cloud Dataproc 
 
