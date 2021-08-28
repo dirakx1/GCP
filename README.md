@@ -104,7 +104,7 @@ https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  
  ## Cloud run
  
- # Cloud iot core 
+ # Cloud IOT core 
  
  # Cloud directory sync
  Migration service form LDAP
