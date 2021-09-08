@@ -48,3 +48,4 @@ kubectl port-forward $(kubectl get pod -l name=hello-kubernetes --no-headers | a
 
 ## References
 *  https://cloud.google.com/sdk/docs/install
+*  https://learnk8s.io/terraform-gke
