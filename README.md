@@ -1,116 +1,50 @@
-# Cloud Bigquery
+Documentation for GKE
 
-Bigdata, 
+## In this repo 
 
-* Best practice: Configure the default table expiration for your datasets, configure the expiration time for your tables, and configure the partition expiration for partitioned tables.
+* ```gke/gcs``` Contains terraform files for backend storage of tfstates (bucket) 
+* ```gke``` Contains terraform files for k8s
+* ```gcr``` Contains terraform files for registry where docker images live
+* ```deployments``` Contains k8s deployment yaml files
+* ```services``` Contains k8s services yaml files
+* ```ingress``` Contains k8s ingress yaml files
 
-# Cloud Bigtable
 
-* For time series data.(non relational) 
-* Best practices: https://cloud.google.com/bigtable/docs/schema-design-time-series
+## Requirements
+* gcloud (configure it to log into your project)
+```
+gcloud iam service-accounts create SA_NAME \
+  --display-name=SA_NAME
 
-# Cloud storage
+gcloud projects add-iam-policy-binding PROJECT_ID \
+  --member "serviceAccount:SA_NAME@PROJECT_ID.iam.gserviceaccount.com" \
+  --role roles/logging.logWriter
 
-* For storage large amounts of data clases of archival are nearline (constant retrieval) and coldline (seldom retireval of data)
+gcloud projects add-iam-policy-binding PROJECT_ID \
+  --member "serviceAccount:SA_NAME@PROJECT_ID.iam.gserviceaccount.com" \
+  --role roles/monitoring.metricWriter
 
-# Cloud SQL
+gcloud projects add-iam-policy-binding PROJECT_ID \
+  --member "serviceAccount:SA_NAME@PROJECT_ID.iam.gserviceaccount.com" \
+  --role roles/monitoring.viewer
 
-* For transactional queries
-
-# Cloud Datastore
-
-* Document DB (Nosql), horizontally scalable
-* Futrue would be firestore.
-
-# Cloud Spanner 
-
-* Horizontally scalable relational db
-
-# Cloud Dataflow
-
-* Cloud Dataflow is a fully managed service for creating data processing pipelines. 
-* similar to apache beam 
-
-# Cloud Dataproc 
-
-* Managed Spark and Hadoop
-
-# Cloud Datalab
-Cloud Datalab is a powerful interactive tool created to explore, analyze, transform, and visualize data and build machine learning models on Google Cloud Platform. It runs on Compute Engine and connects to multiple cloud services easily so you can focus on your data science tasks.
-
-# Cloud Memorystore
-
-Cloud Memorystore (redis management) is an in-memory cache service. Other databases offered in GCP
-are designed to store large volumes of data and support complex queries, but Cloud
-Memorystore is a managed Redis service for caching frequently used data in memory.
-Caches like this are used to reduce the time needed to read data into an application. Cloud
-Memorystore is designed to provide submillisecond access to data.
-As a managed service, Cloud Memorystore allows users to specify the size of a cache
-while leaving administration tasks to Google. GCP ensures high availability, patching, and
-automatic failover so users don’t have to.
-
-# Cloud Firestore
-Cloud Firestore is another GCP-managed NoSQL database service designed as a back-
-end for highly scalable web and mobile applications. A distinguishing feature of Cloud
-Firestore is its client libraries that provide offline support, synchronization, and other fea-
-tures for managing data across mobile devices, IoT devices, and backend data stores. For
-example, applications on mobile devices can be updated in real time as data in the back-
-end changes.
-Cloud Firebase includes a Datastore mode, which enables applications written for
-Datastore to work with Cloud Firebase as well. When running in Native mode, Cloud
-Firestore provides real-time data synchronization and offline support. (Serverless) 
-
-# Kubernetes notes specific to GKE 
-
-* For microservices, containerized applications
-* Create clusters and set zones. 
-* kubectl get deployments
-* kubectl get replicasets
-* kubectl get pods
-* kubectl scale deployment hello --replicas=5 (scale)
-* kubectl rollout status deployment/hello (state of rollout deployment) 
-* kubectl rollout undo deployment/hello (undo rollout deployment)
-* canary deployments
-* blue-green deployments
-
-# Cloud functions
-
-Google Cloud Functions is a serverless execution environment for building and connecting cloud services. With Cloud Functions you write simple, single-purpose functions that are attached to events emitted from your cloud infrastructure and services. Your function is triggered when an event being watched is fired. Your code executes in a fully managed environment. There is no need to provision any infrastructure or worry about managing any server
-
-# GCE
-
-* Imagenes, snapshots: 
-https://cloud.google.com/compute/docs/images/sharing-images-across-projects
-* gcloud compute instances create test-instance --image database-image-a --image-project database-images 
+gcloud projects add-iam-policy-binding PROJECT_ID \
+  --member "serviceAccount:SA_NAME@PROJECT_ID.iam.gserviceaccount.com" \
+  --role roles/stackdriver.resourceMetadata.writer`
+  ````
  
-# GCS (Google cloud storage) 
-* Transfer appliance (>20TB) 
+* terraform (v1.0.1)
+* kubectl (kubectl version --client v1.21.2)
+````
+gcloud container clusters get-credentials afl-cluster-prod --region us-west1 --project rsk-cloud-217119
+kubectl get pods --all-namespaces
+kubectl get nodes
+````
+* To test your cluster (exposing an example on localhost):
+````
+kubectl apply -f ../deployments/hello-deployment.yaml
+kubectl port-forward $(kubectl get pod -l name=hello-kubernetes --no-headers | awk '{print $1}') 8080:8080
+````
 
-
- # Networking
- 
- ## Google Cloud service mesh 
- 
- ## Cloud armor 
- * DDOS protection and WAF
- * itigate owasp risks 
- 
- ## PCI compliant
- 
- * https://cloud.google.com/security/compliance/pci-dss/
- 
- # GDPR
-* The General Data Protection Regulation 2016/679 is a regulation in EU law on data protection and privacy for all individual citizens of the European Union and the European Economic Area. It also addresses the transfer of personal data outside the EU and EEA areas.
- 
- ## Cloud run
- 
- # Cloud IOT core 
- 
- # Cloud directory sync
- Migration service form LDAP
- * https://support.google.com/a/answer/106368?hl=en
- 
-# Stackdriver 
-
-Monitoring. 
-
+## References
+*  https://cloud.google.com/sdk/docs/install
