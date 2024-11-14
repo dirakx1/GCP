@@ -111,7 +111,6 @@ https://cloud.google.com/compute/docs/images/sharing-images-across-projects
  * https://support.google.com/a/answer/106368?hl=en
 
 # Stackdriver 
-
-Monitoring. 
+* Google Stackdriver is a unified monitoring, logging, and diagnostics service for Google Cloud Platform (GCP).
 
 
